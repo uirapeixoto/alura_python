@@ -24,5 +24,10 @@ resultado = modelo.predict(teste)
 print(resultado - marcacoes_teste)
 diferencas = resultado - marcacoes_teste
 acertos = [d for d in diferencas if d==0]
-
+total_acertos = len(acertos)
+total_elementos = len(teste)
+taxa_acertos = 100.0 * total_acertos / total_elementos
+print(total_elementos)
+print(total_acertos)
+print(taxa_acertos)
 print(acertos)
